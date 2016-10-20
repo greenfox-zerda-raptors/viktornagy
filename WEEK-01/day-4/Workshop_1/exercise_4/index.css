@@ -1,0 +1,13 @@
+body {
+background: white;
+}
+
+span {
+  color: red;
+}
+em {
+color: blue;
+}
+h1, h2 {
+ color:green;
+}

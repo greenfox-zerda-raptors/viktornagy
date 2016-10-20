@@ -1,0 +1,16 @@
+div {
+    color: black;
+    font-size: 18px;
+    background-color: white;
+    width: 200px;
+    border: 2px solid black;
+    padding: 40px;
+    margin: 10px;
+    background: url('duck.png') no-repeat left center;
+}
+.elso {
+  background-position: center center;
+}
+.masodik {
+  background-position: right bottom;
+}

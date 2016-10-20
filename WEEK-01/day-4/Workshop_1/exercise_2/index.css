@@ -1,0 +1,22 @@
+.box {
+background-color: yellow;
+color: blue;
+font-size: 30px;
+margin: 0px;
+padding: 30px;
+border: 5px solid black;
+width: 160px;
+height: 20px;
+}
+
+body {
+background: white;
+}
+
+#main-content {
+background: green;
+width: 230px;
+margin: 10px;
+height: 100%;
+padding: 20px;
+}
