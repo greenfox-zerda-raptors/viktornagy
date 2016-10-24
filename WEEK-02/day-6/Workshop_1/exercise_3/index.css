@@ -1,0 +1,57 @@
+.wrapper {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+.flex-container {
+  display: flex;
+}
+
+
+ .box_middle {
+  height: 400px;
+  width: 800px;
+ }
+
+ .one {
+    background: gold;
+    width: 20%;
+ }
+
+ .two {
+    background: red;
+    flex-shrink: 1;
+    border-left: 20px solid white;
+    border-right: 20px solid white;
+    position: relative;
+    width: 60;
+ }
+
+  .three {
+   background: purple;
+   width: 20%;
+  }
+
+header {
+background-color: lightblue;
+height: 150px;
+width: 100%;
+
+}
+
+footer {
+background-color: blue;
+height: 150px;
+width: 100%;
+}
+
+.littlebox {
+   width: 50px;
+   height: 50px;
+    background-color: black;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+
+}

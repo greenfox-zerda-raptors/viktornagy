@@ -1,0 +1,21 @@
+.wrapper {
+    background: #fff;
+    max-width: 360px;
+    padding: 0px;
+    margin: 10px;
+    text-align: justify;
+    border-bottom: 2px solid black;
+}
+
+
+img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.second_image {
+  float: right;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}

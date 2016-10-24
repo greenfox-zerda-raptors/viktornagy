@@ -1,0 +1,55 @@
+.wrapper {
+
+    width: 800px;
+    padding: 0px;
+    margin: 10px;
+    border-bottom: 2px solid black;
+  }
+
+.services {
+  float: left;
+  height: 400px;
+  width: 800px;
+
+}
+.service1, .service2, .service3 {
+  height: 400px;
+  float: left;
+}
+.service1 {
+  background-color: gold;
+width: 130px;
+
+}
+.service2 {
+  background-color: red;
+  width: 500px;
+  margin: 0px 20px 0px 20px;
+  position: relative;
+}
+.service3 {
+   background-color: purple;
+   width: 130px;
+
+}
+.content1 {
+  padding: 10px;
+  background-color: cyan;
+  clear: left;
+  height: 100px;
+  }
+  .content2 {
+    padding: 10px;
+    background-color: blue;
+    clear: left;
+    height: 100px;
+    }
+.blackcube {
+
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+   width: 50px;
+   height: 50px;
+   background-color: black;
+}
