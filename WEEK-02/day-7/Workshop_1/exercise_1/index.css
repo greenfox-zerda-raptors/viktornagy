@@ -1,0 +1,239 @@
+  form {
+  font-family: 'Roboto', sans-serif;
+  height: 940px;
+  width: 700px;
+  background-color: rgb(220, 214, 205);
+  padding: 20px 80px;
+}
+
+  h1 {
+  padding: 10px 10px;
+  background-color: inherit;
+  height: 50px;
+  color: rgb(93, 86, 111);
+  margin: 0px 0px;
+  }
+
+  h2 {
+   background-color: rgb(147, 140, 151);
+   color: white;
+   height: 20px;
+   padding: 10px;
+   margin: 0px;
+   border-radius: 5px;
+   font-size: 20px;
+  }
+
+  h3 {
+   padding: 0px;
+   margin: 10px 0px 5px 0px;
+   font-size: 16px;
+   font-weight: bold;
+   color: rgb(74, 66, 97);
+  }
+
+select, input[name="user_name"] {
+     height: 30px;
+     width: 335px;
+     border-radius: 4px;
+     border-style: solid;
+     border-color: rgb(140, 140, 140);
+     border-width: 1px;
+
+}
+
+input[name="vehicle"] {
+  height: 20px;
+  width: 20px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgb(140, 140, 140);
+  border-width: 1px;
+
+}
+
+input[name="feltetelek"] {
+  height: 18px;
+  width: 20px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgb(140, 140, 140);
+  border-width: 1px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  margin-top: 20px;
+
+}
+
+
+input[name="bemutatkozas"] {
+  height: 200px;
+  width: 700px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: rgb(140, 140, 140);
+  border-width: 1px;
+}
+
+
+  .main_box {
+    float: left;
+    height: 450px;
+    width: auto;
+    background-color: inherit;
+  }
+
+
+.one_vert, .two_vert {
+  height: inherit;
+  float: left;
+  width: 337px;
+  background-color: inherit;
+}
+
+.two_vert {
+   margin-left: 26px;
+
+}
+
+  .bottombox {
+    padding: 10px;
+    background-color: blue;
+    clear: left;
+    height: 200px;
+    }
+
+.star {
+  color: red;
+  display: inline;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+}
+input[id="birth"], input[id="sex"] {
+  width: 60px;
+}
+
+input[type="radio"] {
+  display: inline;
+  height: 20px;
+  width: 20px;
+
+}
+
+.cbirth, .csex {
+  display: inline-block;
+  width: 145px;
+  margin: 0px 0px;
+}
+
+.cbirth {
+  padding-top: 10px;
+
+}
+
+.csex {
+  width: 170px;
+  padding-top: 10px;
+
+}
+
+.brands {
+  display: inline-block;
+  width: 145px;
+  margin: 0px 0px;
+
+}
+
+.button1 {
+  display: inline-block;
+  width: 180px;
+  padding: 8px;
+  border: 2px solid rgb(147, 140, 151);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(74, 66, 97);
+  font-size: 14px;
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(220, 214, 205);
+  background: linear-gradient(to top, rgb(220, 214, 205) 0%, rgb(255, 255, 255) 100%);
+  background: -webkit-linear-gradient(to top, rgb(220, 214, 205) 0%, rgb(255, 255, 255) 100%);
+}
+
+.button1:hover {
+  background: #77aaaa;
+  background: linear-gradient(to bottom, rgb(220, 214, 205) 0%, rgb(255, 255, 255) 100%);
+  background: webkit-linear-gradient(to bottom, rgb(220, 214, 205) 0%, rgb(255, 255, 255) 100%);
+}
+
+.alsogomb1, .alsogomb2 {
+  display: inline-block;
+
+}
+
+.button2 {
+  display: inline-block;
+  width: 160px;
+  padding: 20px;
+  border: 2px solid rgb(74, 66, 97);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(220, 214, 205);
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(74, 66, 97);
+  background: linear-gradient(to top, rgb(74, 66, 97) 0%, #77aaaa 100%);
+  background: -webkit-linear-gradient(to top, rgb(74, 66, 97) 0%, #77aaaa 100%);
+}
+
+.button2:hover {
+  background: #77aaaa;
+  background: linear-gradient(to bottom, rgb(74, 66, 97) 0%, #77aaaa 100%);
+  background: webkit-linear-gradient(to bottom, rgb(74, 66, 97) 0%, #77aaaa 100%);
+}
+
+.button3 {
+  display: inline-block;
+  width: 160px;
+  padding: 20px;
+  border: 2px solid rgb(147, 140, 151);
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(74, 66, 97);
+  font-size: 16px;
+  text-align: center;
+  border-radius: 5px;
+  background: rgb(220, 214, 205);
+  background: linear-gradient(to top, rgb(220, 214, 205) 0%, rgb(255, 255, 255) 100%);
+  background: -webkit-linear-gradient(to top, rgb(220, 214, 205) 0%, rgb(255, 255, 255) 100%);
+}
+
+.button3:hover {
+  background: #77aaaa;
+  background: linear-gradient(to bottom, rgb(220, 214, 205) 0%, rgb(255, 255, 255) 100%);
+  background: webkit-linear-gradient(to bottom, rgb(220, 214, 205) 0%, rgb(255, 255, 255) 100%);
+}
+
+.tobbet {
+  color: rgb(159, 156, 152);
+  padding-top: 15px;
+
+}
+
+.felt {
+  height: 80px;
+
+
+}
+
+.options {
+  display: inline-block;
+  margin-top: 10px;
+}

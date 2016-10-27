@@ -1,0 +1,75 @@
+.background {
+  width: 800px;
+  height: 520px;
+  background: rgb(62, 148, 236);
+  padding: 40px;
+  position: absolute;
+}
+
+.table_vaz {
+ width: 800px;
+ height: auto;
+ border: hidden;
+ overflow: hidden;
+ border-width: 5px;
+ border-radius: 5px;
+}
+
+table {
+  width: inherit;
+  height: auto;
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+  color: grey;
+}
+
+
+tbody tr:nth-child(even) {
+  background-color: rgb(255, 255, 255);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: rgb(235, 235, 235);
+}
+
+tbody tr {
+  border-top: 2px solid rgb(181, 187, 195);
+}
+
+thead tr:nth-child(1) {
+  background-color: rgb(27, 30, 36);
+  color: rgb(181, 187, 195);
+  border-bottom: 4px solid grey;
+  text-align: left;
+}
+
+th, td {
+  font-size: 24px;
+  padding: 26px;
+/*  text-align: left; */
+}
+
+th {
+  font-size: 28px;
+}
+
+.price::before
+{
+content: "$ ";
+}
+
+  td:nth-of-type(even) {
+  border-left:  2px solid rgb(181, 187, 195);
+}
+
+th:nth-of-type(2) {
+  border-left:  1px solid rgb(181, 187, 195);
+}
+
+/* thead, tbody berak;
+div background alá egy div reteg;
+background atzribútum: position absulote;
+table feletti div-nek fix szélesség, auto magasság;
+border: hidden;
+overflow: hidden;
+table szélesség öröklés beállítás
