@@ -31,4 +31,25 @@ public class NumberConverterTests {
         assertEquals("V", NumberConverter.arabicToRoman(5));
     }
 
+    @Test
+    public void shouldReturnVIfor6 (){
+        assertEquals("VI", NumberConverter.arabicToRoman(6));
+    }
+
+    @Test
+    public void shouldReturnVIIIfor8 (){
+        assertEquals("VIII", NumberConverter.arabicToRoman(8));
+    }
+
+    @Test
+    public void shouldReturnIXfor9 (){
+        assertEquals("IX", NumberConverter.arabicToRoman(9));
+    }
+
+    @Test
+    public void shouldReturnXIfor11 (){
+        assertEquals("XI", NumberConverter.arabicToRoman(11));
+    }
+
+
 }
