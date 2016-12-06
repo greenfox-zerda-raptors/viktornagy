@@ -16,6 +16,12 @@ public class NumberConverterTests {
         assertEquals("II", NumberConverter.arabicToRoman(2));
     }
 
+    @Test
+    public void shouldReturnIIIfor3 (){
+        assertEquals("III", NumberConverter.arabicToRoman(3));
+    }
+
+
 
 
 }
