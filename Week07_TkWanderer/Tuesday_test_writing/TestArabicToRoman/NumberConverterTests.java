@@ -21,7 +21,14 @@ public class NumberConverterTests {
         assertEquals("III", NumberConverter.arabicToRoman(3));
     }
 
+    @Test
+    public void shouldReturnIVfor4 (){
+        assertEquals("IV", NumberConverter.arabicToRoman(4));
+    }
 
-
+    @Test
+    public void shouldReturnVfor5 (){
+        assertEquals("V", NumberConverter.arabicToRoman(5));
+    }
 
 }

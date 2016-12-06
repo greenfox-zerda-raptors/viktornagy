@@ -5,8 +5,13 @@ public class NumberConverter {
 
     public static String arabicToRoman(int i) {
         String out="";
-        for (int j=0; j<i; j++){
-            out+="I";
+        if (i==4){
+            out+="IV";
+        }
+        else {
+            for (int j = 0; j < i; j++) {
+                out += "I";
+            }
         }
         return out;
     }
