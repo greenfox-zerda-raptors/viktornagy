@@ -47,9 +47,52 @@ public class NumberConverterTests {
     }
 
     @Test
+    public void shouldReturnXfor10 (){
+        assertEquals("X", NumberConverter.arabicToRoman(10));
+    }
+
+    @Test
     public void shouldReturnXIfor11 (){
         assertEquals("XI", NumberConverter.arabicToRoman(11));
     }
 
+    @Test
+    public void shouldReturnXIIIfor13 (){
+        assertEquals("XIII", NumberConverter.arabicToRoman(13));
+    }
 
+    @Test
+    public void shouldReturnXVfor15 (){
+        assertEquals("XV", NumberConverter.arabicToRoman(15));
+    }
+
+    @Test
+    public void shouldReturnXVIIIfor18 (){
+        assertEquals("XVIII", NumberConverter.arabicToRoman(18));
+    }
+
+    @Test
+    public void shouldReturnXXXVIIIfor38 (){
+        assertEquals("XXXVIII", NumberConverter.arabicToRoman(38));
+    }
+
+    @Test
+    public void shouldReturnXLIXfor49 (){
+        assertEquals("XLIX", NumberConverter.arabicToRoman(49));
+    }
+
+    @Test
+    public void shouldReturnXXfor98 (){
+        assertEquals("XCVIII", NumberConverter.arabicToRoman(98));
+    }
+
+    @Test
+    public void shouldReturnCXXXVIIfor137 (){
+        assertEquals("CXXXVII", NumberConverter.arabicToRoman(137));
+    }
+
+    @Test
+    public void shouldReturnCLfor150 (){
+        assertEquals("CL", NumberConverter.arabicToRoman(150));
+    }
 }
