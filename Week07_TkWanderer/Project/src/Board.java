@@ -4,7 +4,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.ArrayList;
 
-
 /**
  * Created by Viktor on 2016.12.05..
  */
@@ -31,10 +30,6 @@ public class Board extends JComponent {
     };
 
     ArrayList<GameObject> gameObjects;
-    Hero hero1;
-    Skeleton skeleton1;
-    Skeleton skeleton2;
-    ListenForKeys lForKeys;
 
     public Board() {
         gameObjects = new ArrayList<>();
@@ -47,19 +42,29 @@ public class Board extends JComponent {
                 }
             }
         }
-        this.hero1 = new Hero(2, 2);
-        this.skeleton1 = new Skeleton(5, 5);
-        this.skeleton2 = new Skeleton(6, 6);
-        this.hero1.fill();
+
+        this.hero = new Hero(HERO_DOWN, 2, 2);
+        this.skeleton1 = new Skeleton(SKELETON, 5, 5);
+        this.skeleton2 = new Skeleton(SKELETON, 6, 6);
+        this.boss = new Boss(BOSS, 4, 5);
         this.lForKeys = new ListenForKeys();
         this.addKeyListener(lForKeys);
 
-        // set the size of your draw board
-        setPreferredSize(new Dimension(720, 720));
-        setVisible(true);
-
     }
 
+
+    Hero hero;
+    Boss boss;
+    Skeleton skeleton1;
+    Skeleton skeleton2;
+
+    Board.ListenForKeys lForKeys;
+    public final String HERO_UP="Images/hero-up.png";
+    public final String HERO_DOWN="Images/hero-down.png";
+    public final String HERO_RIGHT="Images/hero-right.png";
+    public final String HERO_LEFT="Images/hero-left.png";
+    public final String BOSS="Images/boss.png";
+    public final String SKELETON="Images/skeleton.png";
 
 
     private class ListenForKeys implements KeyListener {
@@ -76,7 +81,9 @@ public class Board extends JComponent {
 
         public void keyReleased(KeyEvent e) {
         }
+
     }
+
 
     @Override
     public void paint(Graphics graphics) {
@@ -86,8 +93,9 @@ public class Board extends JComponent {
         for (GameObject gameObject : gameObjects) {
             gameObject.draw(graphics);
         }
-        hero1.draw(graphics);
+        hero.draw(graphics);
         skeleton1.draw(graphics);
         skeleton2.draw(graphics);
+        boss.draw(graphics);
     }
 }

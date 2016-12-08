@@ -18,14 +18,15 @@ public class GameObject {
         this.posY = posY;
         try {
             image = ImageIO.read(new File(filename));
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             e.printStackTrace();
         }
     }
 
     public void draw(Graphics graphics) {
         if (image != null) {
-            graphics.drawImage(image, posY * 72, posX * 72, null);
+            graphics.drawImage(image, posY * 50, posX * 50, 50, 50, null);
         }
     }
 }
