@@ -3,6 +3,8 @@ package com.greenfoxacademy.controllers;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -10,12 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloRESTController {
-    Greeting greetingObject=new Greeting();
 
     @RequestMapping(value = "/greeting")
-    public ResponseEntity<Greeting> greeting() {
-        return new ResponseEntity<Greeting>(greetingObject, HttpStatus.OK);
+    @ResponseBody
+   public Greeting greeting(@RequestParam(name = "name") String s){
+        Greeting greetingObject=new Greeting(1, s);
+        return  greetingObject;
+
+   // public ResponseEntity<Greeting> greeting() {
+       // return new ResponseEntity<Greeting>(greetingObject, HttpStatus.OK);
 
     }
-
 }
