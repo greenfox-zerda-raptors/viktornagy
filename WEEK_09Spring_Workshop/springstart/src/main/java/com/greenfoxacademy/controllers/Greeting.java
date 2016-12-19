@@ -3,6 +3,8 @@ package com.greenfoxacademy.controllers;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+import java.util.concurrent.atomic.AtomicLong;
+
 /**
  * Created by Viktor on 2016.12.19..
  */
@@ -12,7 +14,7 @@ import lombok.Getter;
 
 public class Greeting {
     @Getter
-    long id=1455454654;
+    AtomicLong counter;
     String content="Ez egy content!!";
 
     public Greeting() {
