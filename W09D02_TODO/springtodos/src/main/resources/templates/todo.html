@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Thymeleaf tutorial - Answer for exercise 8: conditions</h1>
+<h2>Product list</h2>
+<table>
+    <thead>
+    <tr>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Available from</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${Todo}">
+        <td th:text="${product.id}">Red chair</td>
+        <td th:text="${product.title}">$350</td>
+        <td>
+            <div th:switch="${product.isDone}">
+                <p th:case="'true'">A feladat elkészült!</p>
+                <p th:case="'false'">A feladat még nincs kész</p>
+            </div></td>
+        <td>
+            <div th:switch="${product.isUrgent}">
+                <p th:case="'true'">A tennivaló sürgős!</p>
+                <p th:case="'false'">A tennivaló ráér</p>
+            </div></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
